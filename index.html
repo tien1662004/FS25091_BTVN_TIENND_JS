@@ -5,38 +5,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        table,
-        td,
-        th,
-        tr {
-            border: 1px solid #333;
+    <title>BTVN Nguyễn Đình Tiến</title>
 
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background: white;
+            border-radius: 10px;
+        }
+
+        thead {
+            background: #4a90e2;
+            color: white;
+        }
+
+        th,
+        td {
+            padding: 15px 20px;
+            text-align: left;
+            font-size: 17px;
+        }
+
+        tr {
+            transition: 0.2s;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f0f8ff;
+        }
+
+        tbody tr:hover {
+            background: #dceeff;
+            cursor: pointer;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
+
+    <h1>BTVN NGUYỄN ĐÌNH TIẾN</h1>
+
     <table>
         <thead>
             <tr>
                 <th>Buổi học</th>
                 <th>Bài 1</th>
+                <th>Bài 2</th>
+                <th>Bài 3</th>
+                <th>Bài 4</th>
             </tr>
         </thead>
+
         <tbody>
             <tr>
                 <td>12</td>
-                <td>
-                    <a href="./Day12/ex01.html">tim va thay the chuoi</a>
-                </td>
-                <td>
-                    <a href="./Day12/ex01.html">tim va thay the chuoi</a>
-                </td>
+                <td><a href="./task08/bt1.html">Viết hàm tính và đưa ra gợi ý sức khoẻ trên cơ sở chỉ số BMI</a></td>
+                <td><a href="./task08/bt2.html">Hoán vị 2 số</a></td>
+                <td><a href="./task08/bt3.html">Sắp xếp 3 số </a></td>
+                <td><a href="./task08/bt4.html"> Kiểm tra độ dài 3 cạnh của tam giác </a></td>
             </tr>
         </tbody>
     </table>
+
 </body>
 
 </html>
