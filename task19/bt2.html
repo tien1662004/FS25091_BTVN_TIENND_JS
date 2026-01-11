@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 40px 0;
+    }
+
+    .container {
+      width: 420px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 160px;
+      display: block;
+      margin: 10px auto 25px;
+      padding: 12px;
+      font-size: 18px;
+      background-color: #1e7e34;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #16692b;
+    }
+
+    #result {
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.6;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form id="bill-form">
+      <h2>Chia Bill</h2>
+
+      <label>Tổng bill:</label>
+      <input type="number" name="totalBill">
+
+      <label>Số người chia:</label>
+      <input type="number" name="people">
+
+      <label>Tiền tip:</label>
+      <input type="number" name="tip" placeholder="Nhập tiền tip (nếu có)...">
+
+      <button type="submit">Tính tiền</button>
+
+      <div id="result"></div>
+    </form>
+  </div>
+  <script src="./bt2.js"></script>
+</body>
+
+</html>
